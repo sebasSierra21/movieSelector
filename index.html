@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendador de Películas</h1>
+        <form id="movie-form">
+            <div class="form-group">
+                <input type="text" id="movie" name="movie" placeholder="Ingresa el nombre de la película" required>
+            </div>
+            <button type="submit" class="add-btn">Agregar Película</button>
+        </form>
+        <button class="recommend-btn" onclick="getRecommendation()">Recomendar Película</button>
+        <button class="show-list-btn" onclick="toggleMovieList()">Mostrar/Ocultar Lista de Películas</button>
+        <button class="clear-btn" onclick="clearMovies()">Vaciar Lista</button>
+        <div id="movie-list" class="movie-list"></div>
+        <div id="recommendation"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
