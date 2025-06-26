@@ -1,5 +1,5 @@
 // URL del backend (reemplaza con la URL de tu backend desplegado)
-const API_URL = 'https://<your-backend-url>/api'; // Ejemplo: 'https://your-app.onrender.com/api'
+const API_URL = 'https://movieselector.onrender.com/api'; // Ejemplo: 'https://your-app.onrender.com/api'
 
 // Obtener películas desde el backend
 async function getMovies() {
