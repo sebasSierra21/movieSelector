@@ -86,12 +86,13 @@ button {
     background-color: #C5D8E5;
 }
 
-/* Área de recomendación */
-#recommendation {
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
+.clear-btn {
+    background-color: #FFD1D1;
     color: #4A4A4A;
-    min-height: 1.5em;
+}
+
+.clear-btn:hover {
+    background-color: #E5C1C1;
 }
 
 /* Lista de películas */
@@ -115,10 +116,61 @@ button {
 .movie-list li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #F5E6E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .movie-list li:last-child {
     border-bottom: none;
+}
+
+.movie-list .movie-title {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+.movie-list .seen {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Botones de acción en la lista */
+.action-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+}
+
+.seen-btn {
+    background-color: #E8F5D5;
+}
+
+.seen-btn:hover {
+    background-color: #D8E5C5;
+}
+
+.edit-btn {
+    background-color: #F5E6E8;
+}
+
+.edit-btn:hover {
+    background-color: #E5D6D8;
+}
+
+/* Campo de edición */
+.edit-input {
+    flex-grow: 1;
+    padding: 0.4rem;
+    border: 2px solid #D5E8F5;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.edit-input:focus {
+    border-color: #F5E6E8;
 }
 
 /* Diseño responsivo */
@@ -129,5 +181,13 @@ button {
     }
     h1 {
         font-size: 1.5rem;
+    }
+    .movie-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .action-btn {
+        margin-top: 0.3rem;
+        margin-left: 0;
     }
 }
